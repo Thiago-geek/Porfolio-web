@@ -1,7 +1,7 @@
 export function Proyectos() {
   return (
     <>
-      <section className="w-full min-h-screen flex flex-col items-center gap-14 " id="proyectos">
+      <section className="w-full min-h-screen flex flex-col items-center gap-14 border border-black" id="proyectos">
         <div className="md:flex gap-5">
           <div>
             <div className="bg-slate-500 h-60 md:h-auto rounded-xl">
