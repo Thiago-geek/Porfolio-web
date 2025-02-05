@@ -1,4 +1,3 @@
-import { Alternator } from "./Alternador";
 export function Header() {
 
   return (
@@ -8,7 +7,6 @@ export function Header() {
        <li><a href="#proyectos">Proyectos</a></li>
        <li><a href="#sobre mi">Sobre Mi</a></li>
        <li><a href="#contacto">Contacto</a></li>
-       <li className="flex items-center"><Alternator /></li>
         </ul>
       </nav>
     </header>
