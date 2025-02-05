@@ -11,7 +11,7 @@ export  function Profile() {
 </div>
       
 
-      <h1 className="text-4xl font-bold mt-4">Hey, soy midudev</h1>
+      <h1 className="text-4xl font-bold mt-4">Hey, soy Thiago</h1>
 
       <p className=" mt-2 max-w-[45%]">
         +15 años de experiencia. <span className="text-yellow-400 font-bold">Ingeniero de Software y Creador de Contenido sobre Programación</span> de Barcelona, España. 
