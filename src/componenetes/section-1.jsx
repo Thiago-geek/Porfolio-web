@@ -1,40 +1,70 @@
+import React from 'react';
+import { User, Twitch } from 'lucide-react';
+
 export function SobreMi() {
   return (
-    <>
-      <section className="border border-black flex items-center justify-center w-full min-h-screen" id="sobre mi">
-        <div className="flex flex-col lg:flex-row w-[95%] max-w-4xl items-center justify-center text-center lg:text-left">
-          {/* Contenido de texto */}
-          <div className="lg:w-1/2 flex flex-col justify-center items-center gap-7">
-            <h1 className="flex gap-3 text-gray-500">
-              <svg className="size-8" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
-                <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path>
-                <path d="M15 19l2 2l4 -4"></path>
-              </svg>
-              Sobre Mi
-            </h1>
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
 
-            <p className="text-lg">
-              Me llamo Thiago Elías Barbero. Nací el 28 de julio de 2006 en Buenos Aires. Empecé en la programación hace 1 año.
-              <strong> Actualmente estoy aprendiendo diariamente.</strong>
-            </p>
 
-            <p className="text-lg">
-              Soy un desarrollador web con experiencia en frontend. Me encanta resolver problemas complejos y crear soluciones innovadoras.
-              Busco oportunidades para seguir creciendo en el campo del desarrollo web y contribuir a proyectos desafiantes.
-              <strong> Aprendo y supero nuevos retos semanalmente y analizo cómo mejorar mis habilidades a través de ellos.</strong>
-            </p>
+      {/* Main Content */}
+      <section className="container mx-auto px-4 py-12 ">
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
+          {/* Text Content */}
+          <div className="lg:w-2/3 space-y-8">
+            <div className="flex items-center gap-3 mb-6">
+              <User className="w-8 h-8" />
+              <h1 className="text-3xl font-bold">Sobre mí</h1>
+            </div>
+
+            <div className="space-y-6">
+              <p className="text-lg text-gray-300">
+              Me llamo Thiago Elías Barbero. Nací el 28 de julio de 2006 en Buenos Aires. Empecé en la programación hace 1 año.{' '}
+                <span className="text-yellow-400">Actualmente estoy aprendiendo diariamente.</span>.
+              </p>
+
+              <p className="text-lg text-gray-300">
+              Soy un desarrollador web con experiencia en frontend. {' '}
+                <span className="text-yellow-400">encanta resolver problemas complejos y crear soluciones innovadoras.</span>
+                Busco oportunidades para seguir creciendo en el campo del desarrollo web y contribuir a proyectos desafiantes.
+              </p>
+
+              <p className="text-lg text-gray-300">
+                Como creador de contenido,{' '}
+                <span className="text-yellow-400">
+                  cuento con el canal de habla hispana{' '}
+                  <em className="italic">Software & Game Development</em>
+                </span>{' '}
+                Aprendo y supero nuevos retos semanalmente y analizo cómo mejorar mis habilidades a través de ellos.
+              </p>
+            </div>
           </div>
 
-          {/* Imagen */}
-          <div className="lg:w-1/2 flex justify-center items-center mt-5 lg:mt-0">
-            <div className="border border-gray-600 w-60 rounded-2xl p-1">
-              <img className="w-full h-56 object-cover rounded-xl" src="https://tse4.mm.bing.net/th?id=OIP.7bT8oGHcc6D2M5LESPUS1AHaFo&pid=Api&P=0&h=180" alt="Thiago" />
+          {/* Profile Image */}
+          <div className="lg:w-1/3">
+            <div className="relative">
+              {/* <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-purple-600/20 to-transparent">
+                <img
+                  src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=500"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
+              </div> */}
             </div>
           </div>
         </div>
       </section>
-    </>
+
+      {/* Footer */}
+      <footer className="container mx-auto px-4 py-8 mt-12 border-t border-gray-800">
+        <div className="flex flex-col sm:flex-row justify-between items-center">
+          <p className="text-gray-400">© 2024 midudev. Casi todos los derechos reservados</p>
+          <div className="flex space-x-6 mt-4 sm:mt-0">
+            <a href="#about" className="text-gray-400 hover:text-yellow-400 transition-colors">Sobre mí</a>
+            <a href="#contact" className="text-gray-400 hover:text-yellow-400 transition-colors">Contacto</a>
+          </div>
+        </div>
+      </footer>
+    </div>
   );
 }
+

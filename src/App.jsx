@@ -10,9 +10,8 @@ export default function App() {
       <main>
         <Header />
         <div>
-          <Profile />
-          <Proyectos />
-          <SobreMi />
+          <Profile/>
+          <SobreMi/>
         </div>
       </main>
     </>
