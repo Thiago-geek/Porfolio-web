@@ -1,42 +1,52 @@
-
-import { Mail, Code, Palette, Globe, BookOpen } from 'lucide-react';
+// eslint-disable-next-line no-unused-vars
+import { Mail, Code, Palette, Globe, BookOpen, Linkedin } from 'lucide-react';
 
 export function Profile() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <section >
+    <div className="min-h-screen flex justify-center items-center text-white">
       {/* Hero Section */}
-      <div className="container mx-auto px-4 py-20">
-      <div className='flex gap-7'>
+      <div className="container mx-auto py-20">
+      <div className='flex items-center gap-7'>
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200"
+                src="https://media.licdn.com/dms/image/v2/D4E03AQGz-4Gcnu9ykQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723566024058?e=1744243200&v=beta&t=W2HjvDQ_7cPIwaaUcNGio-mltt2MSS5UR_mHS1lN3o4"
                 alt="Profile"
-                className="w-32 h-32 rounded-full border-4 border-emerald-400"
+                className="w-20 h-20  rounded-full object-cover "
               />
-              <button>Disponible para trabajar</button>
+            <button className="btn-typing h-9 flex justify-center items-center px-4 py-2 text-white border border-transparent rounded-full bg-[#202938] text-md relative">
+  <span className="relative z-10 flex justify-center items-center w-full h-full">
+    <a href="https://www.linkedin.com/in/tiago-elias-000389305/">Disponible para trabajar</a>
+  </span>
+  <span className="absolute inset-0 rounded-full border border-green-700 animate-pulse"></span>
+</button>
+
               </div>
         <div className="flex flex-col items-center lg:flex-row lg:justify-between">
-       
-           
-          
-          <div className="text-center lg:text-left flex-1">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          <div className="flex flex-col gap-3 lg:text-left flex-1">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-4 mt-4">
               Hey, soy thiago
             </h1>
-            <p className="text-lg md:text-xl mb-6">
-              <span className="text-gray-300">+1 año de experiencia. </span>
-              <span className="text-yellow-400">Desarrollador Web. Creador de Contenido sobre Programación </span>
-              <span className="text-gray-300">de Buenos aires, Argentina es. Especializado en el desarrollo de aplicaciones web únicas.</span>
+            <p className="text-lg md:text-xl mb-6 w-[65%]">
+              <span className="text-gray-300">Desarrollador Web y Creador de Contenido sobre Programación con más de un año de experiencia. </span>
+              <span className="text-yellow-400">Especializado en el desarrollo de aplicaciones web. </span>
+              <span className="text-gray-300">de Buenos aires, Argentina.  me especializo en crear soluciones digitales innovadoras y optimizadas.</span>
             </p>
             
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <button className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 transition-colors px-6 py-2 rounded-full">
-                <Mail className="w-5 h-5" />
-                Contáctame
-              </button>
-              <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 transition-colors px-6 py-2 rounded-full">
-                
-                LinkedIn
-              </button>
+            <div className="flex flex-wrap gap-4  lg:justify-start">
+            <button className="btn-typing h-9 flex justify-center items-center gap-2 px-4 py-2 text-white border border-transparent rounded-full bg-[#202938] text-md relative">
+            <Mail className="w-5 h-5" />
+      <span className="relative z-10">
+      <a href="mailto:thiagoelias365@gmail.com">Contactame</a></span>
+      <span className="absolute inset-0 rounded-full border border-green-700 animate-pulse"></span>
+    </button>
+
+    <button className="btn-typing h-9 flex justify-center items-center gap-2 px-4 py-2 text-white border border-transparent rounded-full bg-[#202938] text-md relative">
+    <Linkedin className='w-5 h-5' />
+      <span className="relative z-10"> 
+        
+      <a href="https://www.linkedin.com/in/tiago-elias-000389305/">LinkedIn</a></span>
+      <span className="absolute inset-0 rounded-full border border-green-700 animate-pulse"></span>
+    </button>
             </div>
           </div>
         </div>
@@ -68,6 +78,6 @@ export function Profile() {
         </div>
       </div> */}
     </div>
+    </section>
   );
 }
-

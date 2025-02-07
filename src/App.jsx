@@ -5,15 +5,16 @@ import { Profile } from './componenetes/Section-3'
 import './App.css'
 
 export default function App() {
-  return (
+  return(
     <>
-      <main>
-        <Header />
-        <div>
-          <Profile/>
-          <SobreMi/>
-        </div>
-      </main>
+    <main className='flex flex-col items-center justify-center  border border-black'>
+    <Header />
+    <div className='lg:w-[65%]  sm:p-4'>
+        <Profile />
+        <Proyectos />
+        <SobreMi />
+    </div>  
+    </main>
     </>
   )
 }
